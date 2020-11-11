@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/OctopusDeploy/terraform-provider-octopusdeploy/octopusdeploy"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
+	"github.com/pemaxim/terraform-provider-octopusdeploy/octopusdeploy"
 )
 
 func main() {
