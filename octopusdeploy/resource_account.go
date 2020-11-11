@@ -3,10 +3,10 @@ package octopusdeploy
 import (
 	"context"
 
-	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
+	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 )
 
 func resourceAccount() *schema.Resource {

@@ -3,10 +3,10 @@ package octopusdeploy
 import (
 	"context"
 
-	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
+	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 )
 
 func resourceLifecycle() *schema.Resource {
@@ -14,11 +14,11 @@ func resourceLifecycle() *schema.Resource {
 		StateContext: schema.ImportStatePassthroughContext,
 	}
 	resourceLifecycleSchema := map[string]*schema.Schema{
-		"description": &schema.Schema{
+		"description": {
 			Optional: true,
 			Type:     schema.TypeString,
 		},
-		constName: &schema.Schema{
+		constName: {
 			Required: true,
 			Type:     schema.TypeString,
 		},

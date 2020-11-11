@@ -3,9 +3,9 @@ package octopusdeploy
 import (
 	"strings"
 
-	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
+	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 )
 
 func getDeploymentStepSchema() *schema.Schema {

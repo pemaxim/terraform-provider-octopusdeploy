@@ -37,6 +37,9 @@ vendor/
 .release/
 *.tfplan
 
+examples
+examples_in_progress
+
 node_modules/
 .env
 

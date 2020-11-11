@@ -3,9 +3,9 @@ package octopusdeploy
 import (
 	"context"
 
-	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
+	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 )
 
 func expandEnvironment(d *schema.ResourceData) *octopusdeploy.Environment {
@@ -45,24 +45,24 @@ func flattenEnvironment(ctx context.Context, d *schema.ResourceData, environment
 
 func getEnvironmentSchema() map[string]*schema.Schema {
 	return map[string]*schema.Schema{
-		"allow_dynamic_infrastructure": &schema.Schema{
+		"allow_dynamic_infrastructure": {
 			Optional: true,
 			Type:     schema.TypeBool,
 		},
-		"description": &schema.Schema{
+		"description": {
 			Optional: true,
 			Type:     schema.TypeString,
 		},
-		"name": &schema.Schema{
+		"name": {
 			Required:     true,
 			Type:         schema.TypeString,
 			ValidateFunc: validation.StringIsNotEmpty,
 		},
-		"sort_order": &schema.Schema{
+		"sort_order": {
 			Computed: true,
 			Type:     schema.TypeInt,
 		},
-		"use_guided_failure": &schema.Schema{
+		"use_guided_failure": {
 			Optional: true,
 			Type:     schema.TypeBool,
 		},

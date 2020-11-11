@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 	uuid "github.com/google/uuid"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
+	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 )
 
 func expandAzureServicePrincipalAccount(d *schema.ResourceData) *octopusdeploy.AzureServicePrincipalAccount {

@@ -1,8 +1,8 @@
 package octopusdeploy
 
 import (
-	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 )
 
 func getDeployWindowsServiceActionSchema() *schema.Schema {

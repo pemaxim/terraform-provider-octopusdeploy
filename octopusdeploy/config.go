@@ -3,8 +3,8 @@ package octopusdeploy
 import (
 	"net/url"
 
-	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
+	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 )
 
 // Config holds Address and the APIKey of the Octopus Deploy server

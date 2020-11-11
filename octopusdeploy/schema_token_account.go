@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/pemaxim/go-octopusdeploy/octopusdeploy"
 )
 
 func expandTokenAccount(d *schema.ResourceData) *octopusdeploy.TokenAccount {
